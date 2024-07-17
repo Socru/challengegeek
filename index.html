@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>AluraGeek</title>
+</head>
+<body>
+    <header>
+        <div class="menu-header">
+            <div class="container">
+                <img class="menu-icono" src="assets/bicep.png">
+                <img class="menu-icono" src="assets/bicep.png">
+                <img class="menu-icono" src="assets/bicep.png">
+            </div>
+            <div>
+                <h1 class="menu-titulo"> AluraGeek</h1> 
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        
+        <section class="registroProductos">
+            <div class="title-container">
+                <h2 class="registrar">Registrar Productos</h2>
+            </div>
+            <div class="container2">
+                <form class="form-container" data-form>
+                    <input class="dato" data-name placeholder="Nombre..." type="text">
+                    <input class="dato" data-price placeholder="Precio..." type="text">
+                    <input class="dato" data-image placeholder="Imagen..." type="text">
+        
+                    <div class="button-container">
+                        <button type="submit" class="button-submit" id="button">Enviar...</button>
+                        <button type="reset" class="button-clear" id="button">Limpiar...</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="lista-productos" class="misProductos">
+            <section class="listado-produc car-container">
+                <div>
+                    <h2 class="subtitulo">Mis Productos</h2>
+                </div> 
+                <div data-product class="lista-card">
+
+                    <!-- Producto 1 -->
+                    <div class="card">
+                        <div class="imagen-container">
+                            <img src="assets/proteina1.jpg" alt="Proteína Vegana">
+                            <div class="informacion">
+                                <p class="car-titulo">Proteína Vegana</p>
+                            </div>
+                            <div class="value">
+                                <p>$ 25</p>
+                                <button class="delete-button" data-id="${id}">
+                                    <img class="borrar" src="assets/borrar.png" data-remove="true">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="card">
+                        <div class="imagen-container">
+                            <img src="assets/proteina2.jpg" alt="Proteína Isolate">
+                            <div class="informacion">
+                                <p class="car-titulo">Proteína Isolate</p>
+                            </div>
+                            <div class="value">
+                                <p>$ 30</p>
+                                <button class="delete-button" data-id="${id}">
+                                    <img class="borrar" src="assets/borrar.png" data-remove="true">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 3 -->
+                    <div class="card">
+                        <div class="imagen-container">
+                            <img src="assets/proteina3.jpg" alt="Proteína Whey">
+                            <div class="informacion">
+                                <p class="car-titulo">Proteína Whey</p>
+                            </div>
+                            <div class="value">
+                                <p>$ 35</p>
+                                <button class="delete-button" data-id="${id}">
+                                    <img class="borrar" src="assets/borrar.png" data-remove="true">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 4 -->
+                    <div class="card">
+                        <div class="imagen-container">
+                            <img src="assets/proteina4.jpg" alt="Proteína">
+                            <div class="informacion">
+                                <p class="car-titulo">Proteína vegana</p>
+                            </div>
+                            <div class="value">
+                                <p>$ 28</p>
+                                <button class="delete-button" data-id="${id}">
+                                    <img class="borrar" src="assets/borrar.png" data-remove="true">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 5 -->
+                    <div class="card">
+                        <div class="imagen-container">
+                            <img src="assets/proteina5.jpg" alt="Proteína">
+                            <div class="informacion">
+                                <p class="car-titulo">Proteína preminum</p>
+                            </div>
+                            <div class="value">
+                                <p>$ 32</p>
+                                <button class="delete-button" data-id="${id}">
+                                    <img class="borrar" src="assets/borrar.png" data-remove="true">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 6 -->
+                    <div class="card">
+                        <div class="imagen-container">
+                            <img src="assets/proteina6.jpg" alt="Proteína">
+                            <div class="informacion">
+                                <p class="car-titulo">Proteína whey</p>
+                            </div>
+                            <div class="value">
+                                <p>$ 38</p>
+                                <button class="delete-button" data-id="${id}">
+                                    <img class="borrar" src="assets/borrar.png" data-remove="true">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 7 -->
+                    <div class="card">
+                        <div class="imagen-container">
+                            <img src="assets/proteina7.jpg" alt="Proteína de Soja">
+                            <div class="informacion">
+                                <p class="car-titulo">Proteína de Soja</p>
+                            </div>
+                            <div class="value">
+                                <p>$ 26</p>
+                                <button class="delete-button" data-id="${id}">
+                                    <img class="borrar" src="assets/borrar.png" data-remove="true">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 8 -->
+                    <div class="card">
+                        <div class="imagen-container">
+                            <img src="assets/proteina8.jpg" alt="Proteína">
+                            <div class="informacion">
+                                <p class="car-titulo">Proteína economica</p>
+                            </div>
+                            <div class="value">
+                                <p>$ 40</p>
+                                <button class="delete-button" data-id="${id}">
+                                    <img class="borrar" src="assets/borrar.png" data-remove="true">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 9 -->
+                    <div class="card">
+                        <div class="imagen-container">
+                            <img src="assets/proteina9.jpg" alt="Proteína">
+                            <div class="informacion">
+                                <p class="car-titulo">Proteína vegana</p>
+                            </div>
+                            <div class="value">
+                                <p>$ 27</p>
+                                <button class="delete-button" data-id="${id}">
+                                    <img class="borrar" src="assets/borrar.png" data-remove="true">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 10 -->
+                    <div class="card">
+                        <div class="imagen-container">
+                            <img src="assets/proteina10.jpg" alt="Proteína">
+                            <div class="informacion">
+                                <p class="car-titulo">Proteína para flacos</p>
+                            </div>
+                            <div class="value">
+                                <p>$ 36</p>
+                                <button class="delete-button" data-id="${id}">
+                                    <img class="borrar" src="assets/borrar.png" data-remove="true">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="menu-footer">
+            <div class="container">
+                <div class="icons-and-title">
+                    <img class="menu-icono" src="assets/bicep.png">
+                    <img class="menu-icono" src="assets/bicep.png">
+                    <img class="menu-icono" src="assets/bicep.png">
+                     
+                </div>
+            </div>
+        </div>
+        <div class="datos">
+            <p>Ricardo Socru</p>
+            <p> 2024</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/controllers/main.js"></script>
+</body>
+</html>
